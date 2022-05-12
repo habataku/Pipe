@@ -21,7 +21,7 @@ export default {
         };
     },
     mounted() {
-        let region = this.getPreferenceString("region", "US");
+        let region = this.getPreferenceString("region", "JP");
 
         this.fetchTrending(region).then(videos => {
             this.videos = videos;
@@ -44,7 +44,7 @@ export default {
     methods: {
         async fetchTrending(region) {
             return await this.fetchJson(this.apiUrl() + "/trending", {
-                region: region || "US",
+                region: region || "JP",
             });
         },
     },
