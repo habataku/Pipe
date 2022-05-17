@@ -286,7 +286,7 @@ export default {
         });
 
         if (this.testLocalStorage) {
-            this.selectedInstance = this.getPreferenceString("instance", "https://pipedapi.kavin.rocks");
+            this.selectedInstance = this.getPreferenceString("instance", "https://api-piped.mha.fi/");
 
             this.sponsorBlock = this.getPreferenceBoolean("sponsorblock", true);
             if (localStorage.getItem("selectedSkip") !== null) {
