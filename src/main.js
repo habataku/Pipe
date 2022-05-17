@@ -152,7 +152,7 @@ const mixin = {
             } else return defaultVal;
         },
         apiUrl() {
-            return this.getPreferenceString("instance", "https://pipedapi.kavin.rocks");
+            return this.getPreferenceString("instance", "https://api-piped.mha.fi");
         },
         getAuthToken() {
             return this.getPreferenceString("authToken" + this.hashCode(this.apiUrl()));
